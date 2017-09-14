@@ -6,12 +6,15 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     sass = require('gulp-sass'),
     plumber = require('gulp-plumber'),
-    minifyCss = require('gulp-minify-css'),
     sourcemaps = require('gulp-sourcemaps'),
-    autoprefixer = require('gulp-autoprefixer');
+    autoprefixer = require('gulp-autoprefixer'),
+    del = require('del'),
+    zip = require('gulp-zip');
 
 // Image Compression
-var imagemin = require('gulp-imagemin'), imageminPngquant = require('imagemin-pngquant'), imageminJpegRecompress = require('imagemin-jpeg-recompress');
+var imagemin = require('gulp-imagemin'),
+    imageminPngquant = require('imagemin-pngquant'),
+    imageminJpegRecompress = require('imagemin-jpeg-recompress');
 
 // File Paths
 var DIST_PATH = 'public/dist';
@@ -73,9 +76,26 @@ gulp.task('images', function() {
         .pipe(gulp.dest(DIST_PATH + '/images'));
 });
 
+// Clean and Delete Files & Folders
+gulp.task('clean', function() {
+    return del.sync([
+        DIST_PATH
+    ]);
+});
+
 // Default
-gulp.task('default', ['images', 'styles', 'scripts'], function() {
+gulp.task('default', ['clean', 'images', 'styles', 'scripts'], function() {
     console.log('starting default task');
+});
+
+// Zip Files
+gulp.task('export', function() {
+    return gulp.src([
+        'public/index.html',
+        'public/dist/**'
+    ])
+        .pipe(zip('website.zip'))
+        .pipe(gulp.dest('./'));
 });
 
 // Watch
