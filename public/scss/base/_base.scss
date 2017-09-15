@@ -2,7 +2,12 @@
   box-sizing: border-box;
 }
 
-body {
+.main-site-body {
   background: $backdrop;
   font-family: 'Roboto', sans-serif;
+}
+
+i {
+  color: #000;
+  background-color: #06D6A0;
 }
