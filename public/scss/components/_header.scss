@@ -1,0 +1,48 @@
+.main-site-header {
+  background: $header-color;
+  padding-bottom: 15px;
+  margin-bottom: 30px;
+
+  &__name {
+    text-transform: lowercase;
+    color: $font-color-light;
+    font-weight: 100;
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__social-icons {
+    width: 32px;
+  }
+}
+
+.main-site-nav div {
+  list-style: none;
+  padding: 0;
+}
+
+.main-site-nav div a {
+  text-decoration: none;
+  color: $font-color-light;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: block;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.main-site-nav__icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & .twitter-icon {
+    margin-right: 10px;
+  }
+}

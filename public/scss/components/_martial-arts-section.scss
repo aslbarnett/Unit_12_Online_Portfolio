@@ -1,0 +1,48 @@
+#main-site-martial-arts {
+  display: none;
+  flex-direction: column;
+}
+
+.main-site-martial-arts__title {
+  font-weight: 300;
+  color: $primary-font-color;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.main-site-martial-arts__art-container {
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #888888;
+  padding: 25px 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 1s;
+}
+
+.main-site-martial-arts__art-container:hover {
+  background: $french-rose;
+}
+
+.main-site-martial-arts__art-container__title {
+  font-weight: 300;
+  color: $primary-font-color;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 0;
+  transition: color 1s;
+}
+
+.main-site-martial-arts__art-container__list {
+  font-weight: 300;
+  color: $primary-font-color;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  transition: color 1s;
+}
+
+.main-site-martial-arts__art-container:hover .main-site-martial-arts__art-container__title,
+.main-site-martial-arts__art-container:hover .main-site-martial-arts__art-container__list {
+  color: $font-color-light;
+}

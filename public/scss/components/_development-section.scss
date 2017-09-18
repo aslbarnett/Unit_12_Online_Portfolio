@@ -1,0 +1,68 @@
+#main-site-development {
+  display: none;
+  flex-direction: column;
+}
+
+.main-site-development__title {
+  font-weight: 300;
+  color: $primary-font-color;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0;
+}
+
+.main-site-development__project-container {
+  background: $white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px #888888;
+  padding: 25px 15px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background 1s;
+}
+
+.main-site-development__project-container:hover {
+  background: $french-rose;
+}
+
+.main-site-development__project-container:hover .main-site-development__button-container__button {
+  background: $golden-tainoi;
+}
+
+.main-site-development__project-container:hover .main-site-development__project-container__title,
+.main-site-development__project-container:hover .main-site-development__project-container__list {
+  color: $font-color-light;
+}
+
+.main-site-development__project-container__title {
+  font-weight: 300;
+  color: $primary-font-color;
+  font-size: 1.2rem;
+  text-align: center;
+  margin-top: 0;
+  transition: color 1s;
+}
+
+.main-site-development__project-container__list {
+  font-weight: 300;
+  color: $primary-font-color;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  transition: color 1s;
+}
+
+.main-site-development__button-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.main-site-development__button-container__button {
+  text-decoration: none;
+  background: $button-color;
+  color: $font-color-light;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+  transition: background 1s;
+}
