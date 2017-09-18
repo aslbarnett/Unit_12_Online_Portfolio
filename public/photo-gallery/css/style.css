@@ -1,0 +1,164 @@
+/* +++-------------------------------------------+++
+Base Styles
++++-------------------------------------------+++ */
+
+* {
+	box-sizing: border-box;
+	font-family: 'Inconsolata', Arial, sans-serif;
+}
+
+p {
+	margin-top: 40px;
+	color: #fff;
+	text-align: center;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.header-container {
+	position: fixed;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	padding-top: 40px;
+}
+
+form {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+input {
+	width: 50%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	border-radius: 5px;
+	border: 2px solid #ccc;
+	color: #696969;
+
+}
+
+.main-container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 121px;
+}
+
+.image-style {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px; 
+}
+
+#overlay {
+	background: rgba(58, 58, 58, 0.98);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	text-align: center;
+}
+
+#overlay-container {
+	display: none;
+	top: 0;
+	margin-top: 10%;
+	width: 100%;
+	vertical-align: middle;
+	position: absolute;
+	text-align: center;
+}
+
+#overlay-container .main-image {
+	width: 70%;
+}
+
+iframe {
+	width: 300px;
+	height: 168.8px;
+}
+
+#overlay-container a .arrows {
+	width: 30px;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 60px;
+}
+
+/* +++-------------------------------------------+++
+Media Queries
++++-------------------------------------------+++ */
+
+@media (min-width: 769px) {
+
+	input {
+		width: 332px;
+	}
+
+	.main-container {
+		width: 725px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	#overlay-container a .arrows {
+		margin-bottom: 150px;
+	}
+
+	iframe {
+		width: 560px;
+		height: 315px;
+	}
+}
+
+@media (min-width: 1024px) {
+
+	input {
+		width: 460px;
+	}
+
+	.main-container {
+		width: 980px;
+	}
+
+	#overlay-container a .arrows {
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-bottom: 200px;
+	}
+
+	#captions {
+		width: 600px;
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	iframe {
+		width: 700px;
+		height: 393.7px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

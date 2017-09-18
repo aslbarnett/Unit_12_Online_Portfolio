@@ -1,0 +1,248 @@
+/* +++-------------------------------------------+++
+BASE ELEMENT STYLES
++++-------------------------------------------+++ */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Merriweather', serif;
+	color: #A3A3A3;
+	background-color: #ECF1EF;
+	font-weight: 300;
+	font-size: 0.7em;
+}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+/* +++-------------------------------------------+++
+HEADER STYLES
++++-------------------------------------------+++ */
+
+.form-title {
+	color: #fff;
+	background-color: #2F4F4F;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.newsletter-title {
+	color: #2F4F4F;
+	font-size: 1.2em;
+	text-align: center;
+}
+
+/* +++-------------------------------------------+++
+CONTAINERS
++++-------------------------------------------+++ */
+
+.main-header {
+	background-color: #2F4F4F;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.main-header img {
+	max-width: 35px;
+	display: inline-block;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+
+.header-transition {
+	opacity: 1;
+	transition-duration: .4s;
+	cursor: pointer;
+}
+
+.header-transition:hover {
+	opacity: 0.3;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+.form-outline {
+	border: none;
+}
+
+.form-wrapper {
+	text-align: center;
+	border-bottom: 3px solid #2F4F4F;
+	margin-bottom: 3px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.main-body-form {
+	border-top: 1px solid #2F4F4F;
+	border-bottom: 2px solid #2F4F4F;
+	padding-bottom: 15px;
+}
+
+.newsletter-container {
+	border-bottom: 2px solid #2F4F4F;
+	padding-bottom: 15px;
+}
+
+/* +++-------------------------------------------+++
+FORM FIELDS
++++-------------------------------------------+++ */
+
+/* Form Styling */
+
+.sub-title {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	display: inline-block;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #2F4F4F;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+	background-color: #DBDBDB;
+	width: 100%;
+	padding: 15px;
+	border-radius: .3em;
+	outline: 0;
+	border: 1.5px solid #F2F2F2;
+	height: auto;
+}
+
+/* Placeholder Text Styling */
+
+input[placeholder] {
+	text-align: right;
+	font-size: 0.6em;
+	color: #A3A3A3;
+}
+
+textarea[placeholder] {
+	font-size: 1em;
+	color: #A3A3A3;
+}
+
+select {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	height: 46px;
+	color: #A3A3A3;
+}
+
+label {
+	display: block;
+	margin-top: .8em;
+	margin-bottom: .8em;
+}
+
+label.selection {
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 3px;
+}
+
+textarea {
+	width: 100%;
+	height: 86px;
+	outline: 0;
+	border: none;
+	background-color: #DBDBDB;
+	border-radius: .3em;
+	resize: none;
+	padding: 15px;
+}
+
+/* Button Styling */
+
+button[type="submit"],
+button[type="reset"] {
+	width: 100%;
+	outline: 0;
+	border: none;
+	border-radius: .3em;
+	background-color: #79CDCD;
+	height: 50px;
+	font-size: 1.2em;
+	color: #fff;
+	font-weight: bold;
+	margin-bottom: 15px;
+	cursor: pointer;
+	transition-duration: .7s;
+}
+
+button[type="submit"] {
+	margin-top: 30px;
+	background-color: #79CDCD;
+}
+
+button[type="submit"]:hover {
+	background-color: #2F4F4F;
+}
+
+button[type="reset"] {
+	background-color: #CD3333;
+}
+
+button[type="reset"]:hover {
+	background-color: #8B0000;
+}
+
+.copyright {
+	text-align: center;
+	font-size: 0.8em;
+	font-style: italic;
+}
+
+input,
+textarea {
+	transition-duration: .7s;
+}
+
+/* Focus Styling for input fields */
+
+input:focus,
+textarea:focus {
+	border: 1.5px solid #2F4F4F;
+	background-color: #FDFCDC;
+}
+
+.mini-titles {
+	padding-top: 10px;
+}
+
+input[id="post_code"] {
+	width: 50%;
+}
+
+/* Form Validation for required input fields */
+
+input[id="full_name"]:invalid,
+input[id="email_address"]:invalid {
+	border: 1px solid red;
+}
+
+input[id="full_name"]:valid,
+input[id="email_address"]:valid {
+	border: 1px solid green;
+}
+
+

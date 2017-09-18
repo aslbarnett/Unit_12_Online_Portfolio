@@ -4,7 +4,7 @@ var cross = document.getElementById('cross');
 var alertContainer = document.getElementById('main-alert-container');
 
 cross.addEventListener('click', function() {
-    alertContainer.style.display = 'none';
+   alertContainer.style.display = 'none';
 });
 
 // line chart menu
@@ -374,3 +374,33 @@ window.onload = function() {
         loadAllSettings();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

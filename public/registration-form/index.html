@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>The Code Review: Sign Up Form</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,700,300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="header-transition">
+				<img src="img/logo.png" alt="Code Review Logo" class="logo-pic">
+				<h1 class="form-title">THE CODE REVIEW</h1>
+			</div>
+			
+		</header>
+		<div class="wrapper">
+			<form action="#" method="post">
+				<div class="form-wrapper">
+					<h2 class="newsletter-title">Signup for our newsletter</h2>
+					<p>Get the latest news on how your code is doing right in your inbox</p>
+				</div>
+				<div class="main-body-form">
+					<fieldset class="form-outline">
+						<legend class="sub-title">Contact Information</legend>
+
+						<div class="name-flex-container">
+							<label for="full_name">Full Name</label>
+							<input type="text" id="full_name" name="user_name" placeholder="Required" pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+" title="firstname lastname" required>
+						</div>
+
+						<div class="email-flex-container">
+							<label for="email_address">Email Address</label>
+							<input type="email" id="email_address" name="user_email" placeholder="Required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="example@example.com" required>
+						</div>
+
+						<div class="number-flex-container">
+							<label for="phone_number">Phone Number</label>
+							<input type="tel" id="phone_number" name="user_number" placeholder="Please enter your phone number here">
+						</div>
+
+						<div class="street-flex-container">
+							<label for="street_address">Street Address</label>
+							<input type="text" id="street_address" name="user_street_address" placeholder="First part of address">
+						</div>
+
+						<div class="city-flex-container">
+							<label for="city">City</label>
+							<input type="text" id="city" name="user_city" placeholder="City or town">
+						</div>
+
+						<div class="county-flex-container">
+							<label for="county">County</label>
+							<select id="county" name="user_county">
+								<option selected>Choose County</option>
+								<optgroup label="South East">
+									<option value="berkshire">Berkshire</option>
+									<option value="buckinghamshire">Buckinghamshire</option>
+									<option value="east_sussex">East Sussex</option>
+									<option value="hampshire">Hampshire</option>
+									<option value="isle_of_wight">Isle of Wight</option>
+									<option value="kent">Kent</option>
+									<option value="oxfordshire">Oxfordshire</option>
+									<option value="surrey">Surrey</option>
+									<option value="west_sussex">West Sussex</option>
+								</optgroup>
+								<optgroup label="London">
+									<option value="london">London</option>
+								</optgroup>
+								<optgroup label="North West">
+									<option value="cheshire">Cheshire</option>
+									<option value="cumbria">Cumbria</option>
+									<option value="greater_manchester">Greater Manchester</option>
+									<option value="lancashire">Lancashire</option>
+									<option value="merseyside">Merseyside</option>
+								</optgroup>
+								<optgroup label="East of England">
+									<option value="essex">Essex</option>
+									<option value="hertfordshire">Hertfordshire</option>
+									<option value="bedfordshire">Bedfordshire</option>
+									<option value="cambridgeshire">Cambridgeshire</option>
+									<option value="norfolk">Norfolk</option>
+									<option value="suffolk">Suffolk</option>
+								</optgroup>
+								<optgroup label="West Midlands">
+									<option value="herefordshire">Herefordshire</option>
+									<option value="shropshire">Shropshire</option>
+									<option value="staffordshire">Staffordshire</option>
+									<option value="warwickshire">Warwickshire</option>
+									<option value="west_midlands">West Midlands</option>
+									<option value="worcestershire">Worcestershire</option>
+								</optgroup>
+								<optgroup label="South West">
+									<option value="somerset">Somerset</option>
+									<option value="bristol">Bristol</option>
+									<option value="gloucestershire">Gloucestershire</option>
+									<option value="wiltshire">Wiltshire</option>
+									<option value="dorset">Dorset</option>
+									<option value="devon">Devon</option>
+									<option value="cornwall">Cornwall</option>
+								</optgroup>
+								<optgroup label="Yorkshire and the Humber">
+									<option value="south_yorkshire">South Yorkshire</option>
+									<option value="west_yorkshire">West Yorkshire</option>
+									<option value="north_yorkshire">North Yorkshire</option>
+									<option value="east_riding_of_yorkshire">East Riding of Yorkshire</option>
+									<option value="lincolnshire">Lincolnshire</option>
+								</optgroup>
+								<optgroup label="East Midlands">
+									<option value="derbyshire">Derbyshire</option>
+									<option value="nottinghamshire">Nottinghamshire</option>
+									<option value="lincolnshire">Lincolnshire</option>
+									<option value="leicestershire">Leicestershire</option>
+									<option value="rutland">Rutland</option>
+									<option value="northamptonshire">Northamptonshire</option>
+								</optgroup>
+								<optgroup label="North East">
+									<option value="northumberland">Northumberland</option>
+									<option value="tyne_and_wear">Tyne and Wear</option>
+									<option value="durham">Durham</option>
+								</optgroup>
+							</select>
+						</div>
+
+						<div class="code-flex-container">
+							<label for="post_code">Post Code</label>
+							<input type="text" id="post_code" name="user_post_code" placeholder="Post code or Zip code">
+						</div>
+
+					</fieldset>
+				</div>
+				<div class="newsletter-container">
+					<fieldset class="form-outline">
+
+						<legend class="sub-title">Newsletter</legend>
+						
+						<label class="mini-titles">Select the newsletters you would like to receive</label>
+						<input type="checkbox" id="html_news" value="newsletter_html" name="user_newsletter_choice" class="check-select"><label for="html_news" class="selection">HTML News</label><br>
+						<input type="checkbox" id="css_news" value="newsletter_css" name="user_newsletter_choice" class="check-select"><label for="css_news" class="selection">CSS News</label><br>
+						<input type="checkbox" id="javascript_news" value="newsletter_javascript" name="user_newsletter_choice" class="check-select"><label for="javascript_news" class="selection">Javascript News</label>
+
+						<label class="mini-titles">Newsletter format</label>
+						<input type="radio" id="html" value="html" name="newsletter_format"><label for="html" class="selection">HTML</label><br>
+						<input type="radio" id="plain_text" value="plain_text" name="newsletter_format"><label for="plain_text" class="selection">Plain Text</label>
+
+						<label for="other_topics" class="mini-titles">Other topics you'd like to hear about</label>
+						<textarea id="other_topics" name="user_topics" placeholder="Start typing..."></textarea>
+
+					</fieldset>
+				</div>
+
+				<div class="account-container">
+
+					<fieldset class="form-outline">
+
+						<legend class="sub-title">Optional Account Sign Up</legend>
+						
+						<label for="username">User Name</label>
+						<input type="text" id="username" name="user_username" placeholder="Please type a user name">
+
+						<label for="password">Password</label>
+						<input type="password" id="password" name="user_password" placeholder="Please type a password">
+
+					</fieldset>
+
+				</div>
+
+				<div class="button-container">
+					<button type="submit">Sign Up</button>
+					<button type="reset">Reset</button>
+					<p class="copyright">Copyright The Code Review</p>
+				</div>
+
+			</form>
+		</div>	
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
