@@ -17,6 +17,29 @@
   margin-right: auto;
   margin-left: auto;
   margin-top: 30%;
+
+  @media #{$break-narrow} {
+    margin-top: 20%;
+  }
+
+  @media #{$break-wide} {
+    margin-top: 10%;
+  }
+}
+
+#main-site-contact-container h3 {
+  font-weight: 300;
+  color: $primary-font-color;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+#main-site-contact-container a {
+  text-decoration: none;
+  color: $primary-font-color;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
 }
 
 #main-site-close-button {
@@ -24,4 +47,5 @@
   font-size: 0.8rem;
   color: $primary-font-color;
   cursor: pointer;
+  text-align: right;
 }

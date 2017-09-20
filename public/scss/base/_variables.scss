@@ -12,3 +12,7 @@ $header-color: $bay-of-many;
 $font-color-light: $romance;
 $button-color: $french-rose;
 $primary-font-color: $bay-of-many;
+
+/* Media query breakpoints */
+$break-narrow: '(min-width: 768px)';
+$break-wide: '(min-width: 1024px)';

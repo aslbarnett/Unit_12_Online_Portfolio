@@ -1,0 +1,83 @@
+/* +++-------------------------------------------+++
+TABLET MEDIA QUERIES
++++-------------------------------------------+++ */
+
+@media (min-width: 600px) {
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea,
+	input[type="password"],
+	button[type="submit"],
+	button[type="reset"] {
+		width: 70%;
+	}
+
+	.main-body-form,
+	.newsletter-container,
+	.account-container,
+	.button-container {
+		text-align: center;
+	}
+
+
+}
+
+/* +++-------------------------------------------+++
+DESKTOP MEDIA QUERIES
++++-------------------------------------------+++ */
+
+@media (min-width: 760px) {
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	select {
+		width: 85%;
+	}
+
+	input[type="password"],
+	button[type="submit"],
+	button[type="reset"],
+	textarea,
+	input[id="username"] {
+		width: 100%;
+	}
+
+	.main-body-form,
+	.newsletter-container,
+	.account-container,
+	.button-container {
+		text-align: left;
+	}
+
+	.main-body-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.name-flex-container,
+	.email-flex-container,
+	.number-flex-container,
+	.street-flex-container,
+	.city-flex-container,
+	.county-flex-container,
+	.code-flex-container {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 20px;
+	}
+
+	.code-flex-container {
+		width: 50%;
+	}
+
+	input[id="post_code"] {
+		width: 70%;
+	}
+
+
+}

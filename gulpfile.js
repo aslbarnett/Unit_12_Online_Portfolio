@@ -92,7 +92,13 @@ gulp.task('default', ['clean', 'images', 'styles', 'scripts'], function() {
 gulp.task('export', function() {
     return gulp.src([
         'public/index.html',
-        'public/dist/**'
+        'public/dist/**',
+        'public/employee-directory',
+        'public/photo-gallery',
+        'public/registration-form',
+        'public/responsive-layout',
+        'public/site-optimisation',
+        'public/web-dashboard'
     ])
         .pipe(zip('website.zip'))
         .pipe(gulp.dest('./'));

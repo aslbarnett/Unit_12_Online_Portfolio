@@ -1,0 +1,92 @@
+/* +++-------------------------------------------+++
+TABLET STYLING
++++-------------------------------------------+++ */
+
+@media (min-width: 768px) {
+
+	.main-header ul li {
+		background: none;
+		margin: 0;
+		display: inline-block;
+	}
+
+	.h1 {
+		margin: 0;
+	}
+
+	.portfolio-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	.item {
+		width: 45%;
+	}
+
+	.profile-pic {
+		margin: 0;
+	}
+
+	.main-header p {
+		text-align: left;
+		margin-right: 40px;
+	}
+
+	.image-blurb-container {
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	#back-to-top {
+		display: none;
+	}
+
+	.bottom-main-nav {
+		display: initial;
+		width: 60%;
+		text-align: right;
+	}
+
+	.bottom-main-nav li {
+		display: inline-block;
+		font-size: 0.8em;
+	}
+
+	.bottom-main-nav li a:hover {
+		color: #FFC125;
+	}
+
+	.experience-container {
+		display: flex;
+		justify-content: space-around;
+	}
+	
+}
+
+/* +++-------------------------------------------+++
+DESKTOP STYLING
++++-------------------------------------------+++ */
+
+@media (min-width: 1024px) {
+
+	.item {
+		width: 30%;
+	}
+
+	.nav-header-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.h1 {
+		margin-right: auto;
+	}
+
+
+	
+
+}

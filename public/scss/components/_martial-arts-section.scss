@@ -11,14 +11,29 @@
   margin-top: 0;
 }
 
+.main-site-martial-arts__big-container {
+  @media #{$break-narrow} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
 .main-site-martial-arts__art-container {
   background: $white;
   border-radius: 5px;
   box-shadow: 1px 1px 1px #888888;
   padding: 25px 15px;
-  cursor: pointer;
   margin-bottom: 20px;
   transition: background 1s;
+
+  @media #{$break-narrow} {
+    width: 45%;
+  }
+
+  @media #{$break-wide} {
+    width: 30%;
+  }
 }
 
 .main-site-martial-arts__art-container:hover {
